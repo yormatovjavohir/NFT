@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+  overflow-x: hidden;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+main {
+  flex-grow: 1;
+}
+img {
+  display: flex;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: $font-family;
+  background-color: rgba(13, 25, 44, 1);
+}
+.container {
+  max-width: 350px;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  @include responsive-mobile(mobile) {
+    padding-left: 54px;
+  }
+}
